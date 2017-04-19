@@ -43,12 +43,9 @@ void move_car()
 int main( int argc, char* agrv[])
 {
     initSDL( window, renderer);
-    //SDL_Texture *anh=loadTexture("binhcho1.bmp", renderer);
     while( true){
         draw_racetrack();
         move_car();
         SDL_RenderPresent(renderer);
-
     }
-    //SDL_Delay(1000);
 }
